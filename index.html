@@ -1,136 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <meta name="description" content="technology, blog, ai, future, jqguess, jon guess, programming, software development, github">
-        <meta name="author" content="jon guess, @jqguess.liberty.edu">
-        <meta name="robots" content="index, follow">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <title>Tech blog for Jon Guess</title>
-        <!-- Bootstrap core CSS -->
-        <link href="css/bootstrap.css" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description"
+          content="technology, blog, ai, future, jqguess, jon guess, programming, software development, github">
+    <meta name="author" content="jon guess, @jqguess.liberty.edu">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Tech blog for Jon Guess</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
 
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-        <!-- Custom styles for this page -->
-        <link href="tiltsheet.css" rel="stylesheet">
-        <link href="css/carousel.css" rel="stylesheet">
-        <script src="js/jquery-1.12.4.jquery.js"></script>
-        <script src="js/script.js" type="text/javascript"></script>
-        <script src="js/bootstrap.js" type="text/javascript"></script>
-        <script type="text/javascript" src="js/tiltfx.js"></script>
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"/>
 
-        <script>
-        $("button").click(function() {
-        var allPElements = $( ".phide" );
-        $( ".phide" ).find( allPElements );
-         $(".phide").toggle();
-     });
-        </script>
+    <!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="assets/css/material-kit.css" rel="stylesheet"/>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom styles for this page -->
+    <link href="assets/css/demo.css" rel="stylesheet"/>
+    <link href="css/carousel.css" rel="stylesheet"/>
+    <script src="js/jquery-1.12.4.js" rel="stylesheet"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/tiltfx.js"></script>
 
-    </head>
-    <!-- NAVBAR
+</head>
+<!-- Navbar -->
+<nav class="navbar navbar-transparent navbar-info navbar-fixed-top navbar-color-on-scroll">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://jqguess.net">
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="assets/img/jglogo.png" id="logo" alt="jqguesslogo">
+                    </div>
+                    <div class="brand">
+                        <h3></h3>
+                    </div>
+                </div>
+            </a>
+        </div> <!--navbar header -->
+
+        <div class="collapse navbar-collapse" id="navigation-index">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="https://getbootstrap.com" target="_blank">
+                        <i class="material-icons">dashboard</i> Bootstrap
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/jqguess/techupdate" target="_blank">
+                        <i class="material-icons">unarchive</i> Fork This
+                    </a>
+                </li>
+                <li>
+                    <a rel="tooltip" title="Follow someone else on Twitter" data-placement="bottom"
+                       href="https://twitter.com/CreativeTim" target="_blank"
+                       class="btn btn-white btn-simple btn-just-icon">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a rel="tooltip" title="GitHub" data-placement="bottom" href="https://github.com/jqguess"
+                       target="_blank" class="btn btn-white btn-simple btn-just-icon">
+                        <i class="fa fa-github-alt"></i>
+                    </a>
+                </li>
+                <li>
+                    <a rel="tooltip" title="Find me on LinkedIn" data-placement="bottom"
+                       href="https://www.linkedin.com/in/jonathan-guess-084683111" target="_blank"
+                       class="btn btn-white btn-simple btn-just-icon">
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Navbar -->
+
+<div class="wrapper">
+    <!-- Carousel
     ================================================== -->
-    <body>
-        <div class="navbar-wrapper">
-            <div class="container">
-                <nav class="navbar navbar-inverse  navbar-static-top">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand"><strong style="color:grey;"></strong></a>
-                            <img class="img-responsive" style="margin-top:15px; opacity: .3;" src="img/logo3.png" alt="..">
-                        </div>
-                        <div id="navbar" class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav" style="float:right;">
-                                <li><a href="http://jqguess.github.io/jqguess"><i class="fa fa-github fa-2x"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/jonathan-guess-084683111"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
-                                <li><a href="https://github.com/jqguess"><i class="fa fa-envelope fa-2x"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div> <!-- Navbar -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class="first-slide" src="img/road.jpg" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1> A.I. wins vs > human class? </h1>
+                        <p>Authors logic is quite interesting. Read on to get the latest. </p>
 
-
-        <!-- Carousel
-        ================================================== -->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img class="first-slide" src="img/road.jpg" alt="First slide">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1> A.I. wins vs > human class? </h1>
-                            <p>Authors logic is quite interesting. Read on to get the latest. </p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img class="second-slide" src="img/fastroad.jpg" alt="Second slide">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Tin foil hat time!</h1>
-                            <p>Face capture reenactment software</p>
-                            <p><code>Nothing to see here folks... really</code></p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img class="third-slide" src="img/hall.jpg" alt="Third slide">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>MathPix.. take picture, solve equation</h1>
-                            <p>I predict really high math scores for IOS users, a first of its kind.</p>
-
-                        </div>
                     </div>
                 </div>
             </div>
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div><!-- /.carousel -->
+            <div class="item">
+                <img class="second-slide" src="img/fastroad.jpg" alt="Second slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Tin foil hat time!</h1>
+                        <p>Face capture reenactment software</p>
+                        <p><code>Nothing to see here folks... really</code></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="third-slide" src="img/hall.jpg" alt="Third slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>MathPix.. take picture, solve equation</h1>
+                        <p>I predict really high math scores for IOS users, a first of its kind.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div><!-- /.carousel -->
 
 
         <!-- Marketing messaging and featurettes
         ================================================== -->
         <!-- Wrap the rest of the page in another container to center all the content. -->
-
-        <div class="container marketing">
+        <div class="main main-raised">
+            <div class="space-50"></div>
+         <div class="container">
             <!-- Three columns of text below the carousel -->
             <div class="row">
                 <div class="col-lg-4">
                     <img class="img-responsive" src="img/droid.jpg" alt="" width="140" height="140" style="margin:6px;">
                     <h3>Useless Humans</h3>
-                    <p>My outlook is not as pesimistic concerning ai, but with giants such as Gates in line for this book, it deserves attention. "It is hard to miss the warnings. In the race to make computers more intelligent than us, humanity will summon a demon, bring forth the end of days, and code itself into oblivion. Instead of silicon assistants we will build silicon assassins."</p>
+                    <p>My outlook is not as apocalyptic concerning ai, but with giants such as Gates in line for this book, it deserves attention. "It is hard to miss the warnings. In the race to make computers more intelligent than us, humanity will summon a demon, bring forth the end of days, and code itself into oblivion. Instead of silicon assistants we will build silicon assassins."</p>
 
                     <p>"The doomsday story of an evil AI has been told a thousand times. But our fate at the hand of clever robots may in fact be worse - to summon a class of eternally useless human beings." <button type="button" id="button" class="btn btn-sm btn-default">More</button></p>
 
@@ -145,7 +179,7 @@
                 <div class="col-lg-4">
                     <img class="img-responsive" src="img/tinfoil2.jpg" alt="tinfoil" width="140" height="140" style="margin:6px;">
                     <h3> RT facial reenactment</h3>
-                    <p>In a recently published paper by the Stanford lab of Matthias Niessner, we can find this shocker,  "Face2Face: Real-time Face Capture and Reenactment of RGB Videos", the authors show how disturbingly easy it is to take a surrogate actor and, in real time using everyday available tools, reenact their face and create the illusion that someone else,
+                    <p>In a recently published paper by the Stanford lab of Matthias Niessner titled "Face2Face: Real-time Face Capture and Reenactment of RGB Videos", the authors show how disturbingly easy it is to take a surrogate actor and, in real time using everyday available tools, reenact their face and create the illusion that someone else,
                         notably someone famous or important, is speaking. Even more disturbing: one does not need sophisticated equipment to create a "talking" clone - a commodity web cam and some software is all one needs to create the greatest of sensory manipulations.</p>
                     <p class="phide" id="phide2">
                         "This demo video is purely research-focused and we would like to clarify the goals and intent of our work. Our aim is to demonstrate the capabilities of modern computer vision and graphics technology, and convey it in an approachable and fun way. We want to emphasize that computer-generated videos have been part in feature-film movies for over 30 years.
@@ -153,86 +187,225 @@
                         <a href="https://www.youtube.com/watch?v=ohmajJTcpNk">Source</a></p><strong>-jqguess</strong>
 
 
-
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img class="img-responsive" src="img/disrupt.jpg" alt="" width="140" height="140" style="margin:6px;">
+                    <img class="img-responsive" src="img/disrupt.jpg" alt="" width="140" height="140"
+                         style="margin:6px;">
                     <h3>Mathpix!</h3>
-                    <p>I just tried this App and actually felt a decline in cognitive ability, which means it works well. Twenty seconds or less on some bigger equations, although the picture needs to be cropped well in order to work properly. It also can take captures from a monitor, and allows solving for graphs if needed. Although it requires a connection to access  the server,
+                    <p>I just tried this App and actually felt a decline in cognitive ability, which means it works
+                        well. Twenty seconds or less on some bigger equations, although the picture needs to be cropped
+                        well in order to work properly. It also can take captures from a monitor, and allows solving for
+                        graphs if needed. Although it requires a connection to access the server,
                         the transaction is quite fast, usually just a couple seconds. </p>
-                    <p class="phide" id="phide3">I would imagine those who have sloppy hand writing might have recognition issues with this app, but for solving from a textbook, this is a math teachers nightmare. As the article says, it is like a new version of those old TI-84 calculators. It really is a first of its kind.
-                        <a href="http://www.theverge.com/circuitbreaker/2016/5/20/11723200/mathpix-will-solve-handwritten-math-equations-for-you">Source</a></p> <strong>-jqguess</strong>
+                    <p class="phide" id="phide3">I would imagine those who have sloppy hand writing might have
+                        recognition issues with this app, but for solving from a textbook, this is a math teachers
+                        nightmare. As the article says, it is like a new version of those old TI-84 calculators. It
+                        really is a first of its kind.
+                        <a href="http://www.theverge.com/circuitbreaker/2016/5/20/11723200/mathpix-will-solve-handwritten-math-equations-for-you">Source</a>
+                    </p> <strong>-jqguess</strong>
                 </div>
-                </div>      
-                    <!-- START THE FEATURETTES -->
-                    <hr class="featurette-divider">
-
+            </div>
+         </div>
+            <div class="section">
+                <div class="container text-center">
                     <div class="row">
-                        <div class="col-md-7">
-                            <h2 class="featurette-heading">While your here <span class="text-muted">check out some of my other stuff</span></h2>
-                            <p class="lead">My GitHub page is linked above, because I spend quite a bit of my little free time on there reading, building, and learning.
-                                I also have a web app and a few other sites at <a href="http://jqguess.net">jqguess</a>.  A PHP driven web app using MySQL that I worked on is at
-                                <a href="http://jqguess.net/electronicsupply">electronic supply.</a> It is lightweight, responsive, and easily extensible with content or a CMS.</p>
+                        <div class="col-md-8 col-md-offset-2 text-center">
+                            <h2>Big data and its developer fallout - Techcrunch</h2>
+                            <h4>As the internet social turf wars continue to mature, the land grab is becoming much
+                                better understood. With a few companies controlling 95 percent of the social data, the
+                                internet is more closed and much more controlled than ever before.</h4>
+                            <p> The term (and concept behind) big data has been thrown around a lot over the past 15
+                                months. What I’m referring to here is user data, primarily from social businesses that
+                                can be leveraged to build other apps and businesses if done within the confines of a
+                                company API.
+                                <a href="https://techcrunch.com/2016/07/16/big-data-and-its-developer-fallout/">Read
+                                    More</a></p>
                         </div>
-                        <div class="col-md-5">
-                            <img class="img-responsive center-block" src="img/boy.jpg" alt="Generic placeholder image">
-                        </div>
-                    </div>
-
-                   
-                    <hr class="featurette-divider">
-                    <div class="row" style="">
-                        <div class="col-md-7 col-md-push-5" style="">
-                            <h2 class="featurette-heading">I spent a few hours working<span class="text-muted"> on the Odin Project last weekend.</span></h2>
-                            <p class="lead">It seems like good project so far and in just a few short hours I finished a quick google clone site and a javascript etch-a-sketch program. I am hesitant
-                                to dive into ruby on rails thou, because I already have some time into PHP. You can visit the google clone <a href="http://htmlpreview.github.io/?https://github.com/jqguess/odin/blob/master/google_clone/google.html">here.</a> 
-                                The etch-a-sketch can be found <a href="http://htmlpreview.github.io/?https://github.com/jqguess/odin/blob/master/etchasketch/etchasketch.html">here.</a></p>
-                        </div>
-                        <div class="col-md-5 col-md-pull-7">
-                            <img class= "img-responsive center-block" src="img/hay.jpg" alt="">
-                        </div>
-                    </div>
-
-                    <hr class="featurette-divider">
-
-                    <div class="row">
-                        <div class="col-md-7">
-                            <h2 class="featurette-heading">Ever heard of tilt effect? <span class="text-muted">Very cool program! </span></h2>
-                            <p class="lead">It is written by codrops and makes multiple soft copies of your image, and uses them to create a tilt, move effect which is very cool. It uses hover to
-                                achieve some effects, so does not work on small viewports yet. Feel free to swing by <a href="http://jqguess.net/tilteffect">here</a> to see it in action if you haven't already.</p>
-                        </div>
-                        <div class="col-md-5">
-                            <img class="img-responsive center-block" src="img/wasteland.jpg" alt="">
-                        </div>
-                    </div>
-
-                    <hr class="featurette-divider">
-
-                    <!-- /END THE FEATURETTES -->
-
-
-                    <!-- FOOTER -->
-                   </div><!-- /.container -->
-                <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12" style="text-align:center; float:none;">
-                        <p>Copyright &copy; <a href="http://jqguess.net">Plain and Simple</a>  | Design by JQGuess.  Tilt-Effect designed by <a href="http://tympanus.net/codrops/2015/05/28/image-tilt-effect/">Codrops</a> | 
-                            <a href="http://github.io/jqguess"><i class="fa fa-github fa-lg"></i></a> </p>
                     </div>
                 </div>
             </div>
-        </div>
 
+            <div class="section section-full-screen section-signup"
+                 style="background-image: url('img/mtsky.jpg'); background-size: cover; background-position: top center; min-height: 700px;">
 
+            </div>
+            <div class="space-50"></div>
+
+            <div class="section section-notifications" id="notifications">
+                <div class="alert alert-info">
+                    <div class="container-fluid">
+                        <div class="alert-icon">
+                            <i class="material-icons">info_outline</i>
+                        </div>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true"><i class="material-icons">clear</i></span>
+                        </button>
+
+                        <b>Info alert:</b> iOS 10!, Apple has released the iOS beta for everyone a few days ago. No
+                        surprise
+                        it may be messy still, so try that secondary device first.
+
+                    </div>
+                </div>
+
+                <!-- START THE FEATURETTES -->
+                <div id="images">
+
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-3 col-sm-offset-1">
+                            <h4></h4>
+                            <img src="img/boy.jpg" alt="Rounded Image" class="img-rounded img-responsive img-raised">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="title">
+                                <h3>iOS animated photos app!</h3>
+                            </div>
+                            <p class="lead">Polaroid Swing, a new iOS app for creating animated photos, on Tuesday
+                                debuted at the App Store.
+                                The app has ties both to instant photography pioneer Polaroid and Twitter founder Biz
+                                Stone. Polaroid Swing lets a "phonetog"
+                                capture 1-second videos posing as images that become animated when a phone is tilted, or
+                                when they're swiped or tapped.
+                                <a href="http://www.technewsworld.com/story/Polaroid-Swing-Gives-New-Meaning-to-Moving-Pictures-83695.html">More</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="space-70"></div>
+
+                    <div class="row" style="">
+                        <div class="col-md-6 col-md-offset-2">
+                            <div class="title">
+                                <h3>If your 30+, nostalgia warning!</h3>
+                            </div>
+                            <p class="lead">Nintendo on Thursday unveiled its latest gaming console: the NES Classic
+                                Edition, a mini replica of the original home
+                                console that can connect directly to a TV via an HDMI cable. The system features 30
+                                built-in games from the 8-bit era, including fan favorites such as Super Mario Bros.,
+                                The Legend of Zelda, Metroid, Donkey Kong, PAC-MAN and Kirby's Adventure. <a
+                                        href="http://www.technewsworld.com/story/Nintendos-NES-Classic-Targets-Gaming-Geezers-83703.html">More</a>
+                            </p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="img/mini.jpg" alt="Rounded Image" class="img-rounded img-responsive img-raised">
+                        </div>
+                    </div>
+                    <div class="space-70"></div>
+
+                    <div class="row">
+                        <div class="col-sm-3 col-sm-offset-1">
+                            <h4></h4>
+                            <img src="img/ldistro.jpg" alt="Rounded Image"
+                                 class="img-rounded img-responsive img-raised">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="title">
+                                <h3>Handy Linux</h3>
+                            </div>
+                            <p class="lead">HandyLinux is a distro that offers a simplified approach to using the Linux
+                                desktop operating system.
+
+                                HandyLinux first appeared about three years ago. The latest version, 2.5, was released
+                                in early June.
+
+                                The developers make it easy to peel off the "Handy" layers to reveal a more standard
+                                Linux environment as users learn the system.
+                                Those who no longer need the IT tools included with the initial installation can remove
+                                them easily using the Handy2Debian application from the main menu.
+                                That turns HandyLinux into a relatively standard Debian-based distribution running the
+                                lightweight and slightly remixed Xfce desktop environment.
+                                <a href="http://www.technewsworld.com/story/HandyLinux-Is-a-Great-Toolbox-for-Linux-Newbies-83677.html">More</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-50"></div>
+                <!-- /END THE FEATURETTES -->
+
+                    <footer class="footer">
+                        <div class="container">
+                            <nav class="pull-left">
+                                <ul>
+                                    <li>
+                                        <a href="http://jqguess.net">
+                                            JQGuess
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/jonathan-guess-084683111">
+                                            About Me
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://laravel.com/">
+                                            Laravel/PHP
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            MIT Licence
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="copyright pull-right">
+                                &copy; 2016, made possible by <i class="material-icons">face</i> JQGuess, Bootstrap, & Material-Kit
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+      </div>
 
                 <!-- Bootstrap core JavaScript
-                ================================================== -->
-                <!-- Placed at the end of the document so the pages load faster -->
-                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-                <script src="js/bootstrap.js"></script>
-                <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-                <script src="js/ie10-viewport-bug-workaround.js"></script>
-                <script src="js/script.js"></script>
-                </body>
+         	<!--   Core JS Files   -->
+        <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/js/material.min.js"></script>
+        <script src="assets/js/jqueryrotate.js"></script>
+        <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+        <script src="assets/js/nouislider.min.js" type="text/javascript"></script>
+
+        <!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+        <script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+        <!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+        <script src="assets/js/material-kit.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        $().ready(function () {
+            // the body of this function is in assets/material-kit.js
+            materialKit.initSliders();
+            window_width = $(window).width();
+
+            if (window_width >= 992) {
+                big_image = $('.wrapper > .header');
+
+                $(window).on('scroll', materialKitDemo.checkScrollForParallax);
+            }
+        });
+    </script>
+
+    <script>
+        $("button").click(function() {
+            var allPElements = $( ".phide" );
+            $( ".phide" ).find( allPElements );
+            $(".phide").toggle();
+        });
+    </script>
+    <script>
+        $("#logo").rotate({
+            bind: {
+                mouseover: function () {
+                    $(this).rotate({animateTo: 360})
+                },
+                mouseout: function () {
+                    $(this).rotate({animateTo: -360})
+                }
+            }
+
+        });
+    </script>
+    </body>
                 </html>
