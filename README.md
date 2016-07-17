@@ -1,5 +1,7 @@
 # techupdate
 <br />
+[See it in action here](http://jqguess.net/techupdate)
+<br />
 <br />
 ### A sleek bootstrap website with
 ### recent tech articles, updates and reviews.
